@@ -48,7 +48,7 @@ services:
       postgres:
         condition: service_healthy
       postgrest:
-        condition: service_started
+        condition: service_healthy
     environment:
       PORT: "7130"
       PROJECT_ROOT: /app
